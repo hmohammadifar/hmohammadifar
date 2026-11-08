@@ -39,11 +39,7 @@
     document.querySelectorAll("[data-theme-toggle]").forEach(function (btn) {
       var isDark = theme === "dark";
       btn.setAttribute("aria-pressed", String(isDark));
-      btn.setAttribute(
-        "aria-label",
-        isDark ? "Switch to light theme" : "Switch to dark theme"
-      );
-      btn.setAttribute("title", isDark ? "Light theme" : "Dark theme");
+      btn.setAttribute("title", isDark ? "Switch to light theme" : "Switch to dark theme");
     });
   }
 
@@ -85,7 +81,11 @@
     });
 
     document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") closeNav();
+      if (event.key === "Escape" && nav.classList.contains("is-open")) {
+        var focusWasInNav = nav.contains(document.activeElement);
+        closeNav();
+        if (focusWasInNav) navToggle.focus();
+      }
     });
 
     document.addEventListener("click", function (event) {
@@ -151,32 +151,6 @@
   }
 
   /* ------------------------------------------------------------------------
-     Reveal on scroll
-     ------------------------------------------------------------------------ */
-  var revealItems = document.querySelectorAll(".reveal");
-
-  if (!("IntersectionObserver" in window) || reduceMotion) {
-    revealItems.forEach(function (el) {
-      el.classList.add("is-in");
-    });
-  } else {
-    var revealObserver = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add("is-in");
-          revealObserver.unobserve(entry.target);
-        });
-      },
-      { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
-    );
-
-    revealItems.forEach(function (el) {
-      revealObserver.observe(el);
-    });
-  }
-
-  /* ------------------------------------------------------------------------
      Scrollspy — marks the current section in the nav
      ------------------------------------------------------------------------ */
   var navLinks = Array.prototype.slice.call(
@@ -222,4 +196,7 @@
   document.querySelectorAll("[data-year]").forEach(function (el) {
     el.textContent = String(new Date().getFullYear());
   });
+
+  // Only switch to the enhanced navigation after its handlers are installed.
+  root.classList.remove("no-js");
 })();

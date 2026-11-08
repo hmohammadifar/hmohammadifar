@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Page not found — Dr Hossein Mohammadifar</title>
     <meta name="description" content="Page not found." />
+    <meta name="robots" content="noindex" />
     <meta name="author" content="Dr Hossein Mohammadifar" />
     <meta name="theme-color" content="#f7f5f1" />
     <meta property="og:type" content="website" />
@@ -14,16 +15,13 @@
     />
     <meta property="og:description" content="Page not found." />
     <meta property="og:site_name" content="Dr Hossein Mohammadifar" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
     <link rel="preload" href="assets/css/base.css" as="style" />
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/layout.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
     <link rel="stylesheet" href="assets/css/print.css" media="print" />
-    <script>
-      document.documentElement.classList.remove("no-js");
-    </script>
     <script src="assets/js/animations.js" defer></script>
     <script src="assets/js/interactions.js" defer></script>
     <script src="assets/js/main.js" defer></script>
@@ -64,7 +62,7 @@
             type="button"
             data-theme-toggle
             aria-pressed="false"
-            aria-label="Switch to dark theme"
+            aria-label="Dark theme"
             title="Dark theme"
           >
             <svg
@@ -103,7 +101,7 @@
             data-nav-toggle
             aria-expanded="false"
             aria-controls="primary-nav"
-            aria-label="Toggle navigation menu"
+            aria-label="Menu"
           >
             <span class="nav-toggle__bars" aria-hidden="true"
               ><span></span><span></span><span></span
@@ -112,7 +110,7 @@
         </div>
       </div>
     </header>
-    <main id="main">
+    <main id="main" tabindex="-1">
       <section class="hero" style="padding-block: var(--sp-9)">
         <div class="hero__bg" aria-hidden="true">
           <div class="hero__grid-lines"></div>
@@ -197,7 +195,7 @@
                     transform="rotate(120 12 12)"
                   /></svg
               ></span>
-              <h3>Research</h3>
+              <h2 class="card-heading">Research</h2>
               <p>Themes, projects and methods.</p>
             </a>
             <a
@@ -227,8 +225,8 @@
                     stroke-linejoin="round"
                   /></svg
               ></span>
-              <h3>Publications</h3>
-              <p>The filtered publication list.</p>
+              <h2 class="card-heading">Publications</h2>
+              <p>The publication list.</p>
             </a>
             <a
               class="card reveal"
@@ -255,7 +253,7 @@
                     stroke-linejoin="round"
                   /></svg
               ></span>
-              <h3>CV</h3>
+              <h2 class="card-heading">CV</h2>
               <p>The academic record.</p>
             </a>
           </div>
@@ -280,7 +278,7 @@
             </p>
           </div>
 
-          <div class="footer-col">
+          <nav class="footer-col" aria-label="Footer navigation">
             <h2>Explore</h2>
             <ul>
               <li><a href="about.html">About</a></li>
@@ -288,9 +286,9 @@
               <li><a href="publications.html">Publications</a></li>
               <li><a href="cv.html">Curriculum vitae</a></li>
             </ul>
-          </div>
+          </nav>
 
-          <div class="footer-col">
+          <nav class="footer-col" aria-label="External profiles">
             <h2>Elsewhere</h2>
             <ul>
               <li>
@@ -307,7 +305,7 @@
               </li>
               <li><a href="https://github.com/hmohammadifar">GitHub</a></li>
             </ul>
-          </div>
+          </nav>
         </div>
 
         <div class="footer-bottom">

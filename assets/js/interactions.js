@@ -77,26 +77,23 @@
   document.querySelectorAll("[data-copy]").forEach(function (btn) {
     btn.addEventListener("click", function () {
       var value = btn.getAttribute("data-copy");
-      var original = btn.textContent;
+      var status = document.querySelector("[data-copy-status]");
 
-      function done(message) {
-        btn.textContent = message;
-        window.setTimeout(function () {
-          btn.textContent = original;
-        }, 1800);
+      function announce(message) {
+        if (status) status.textContent = message;
       }
 
       if (navigator.clipboard && window.isSecureContext) {
         navigator.clipboard.writeText(value).then(
           function () {
-            done("Copied ✓");
+            announce("Email address copied.");
           },
           function () {
-            done("Press Ctrl+C");
+            announce("Could not copy. Select the email address above to copy it.");
           }
         );
       } else {
-        done("Copy manually");
+        announce("Copy unavailable. Select the email address above to copy it.");
       }
     });
   });

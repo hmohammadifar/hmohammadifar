@@ -1522,3 +1522,10 @@ table.simple tbody tr:hover {
     display: none;
   }
 }
+
+/* Keep direct contact information upright and scrollable tables keyboard accessible. */
+address { font-style: normal; }
+.table-wrap:focus-visible { outline: 3px solid var(--brand-500); outline-offset: 3px; }
+
+.card-heading { font-size: var(--step-1); }
+.copy-status:not(:empty) { margin-top: var(--sp-3); }
