@@ -11,7 +11,7 @@
   --brand-500: #2f4f8f;
   --brand-600: #27407a;
   --brand-400: #4a6cb0;
-  --accent-500: #b4763c;
+  --accent-500: #80501f;
   --accent-400: #d29356;
 
   /* Surfaces (light theme default) */
@@ -25,7 +25,7 @@
   /* Text */
   --text: #1b1f26;
   --text-soft: #4b5361;
-  --text-muted: #737b88;
+  --text-muted: #596273;
   --on-brand: #ffffff;
 
   /* Feedback */
@@ -392,7 +392,7 @@ hr {
   transition: transform var(--dur) var(--ease);
 }
 
-.skip-link:focus-visible {
+.skip-link:focus {
   transform: translate(-50%, 0);
   color: var(--on-brand);
 }
@@ -443,3 +443,6 @@ hr {
     scroll-behavior: auto !important;
   }
 }
+
+/* Keep the skip target visible beneath the sticky header. */
+main { scroll-margin-top: var(--header-h); }

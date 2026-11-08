@@ -20,16 +20,40 @@
       content="Hossein Mohammadifar — technology strategy, information security, digital transformation and artificial intelligence."
     />
     <meta property="og:site_name" content="Dr Hossein Mohammadifar" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="https://hmohammadifar.github.io/hmohammadifar/" />
+    <meta property="og:url" content="https://hmohammadifar.github.io/hmohammadifar/" />
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://hmohammadifar.github.io/hmohammadifar/#person",
+      "name": "Hossein Mohammadifar",
+      "honorificPrefix": "Dr",
+      "url": "https://hmohammadifar.github.io/hmohammadifar/",
+      "jobTitle": "Technology strategy and digital transformation consultant",
+      "description": "Technology strategy, information security, digital transformation and artificial intelligence.",
+      "sameAs": [
+            "https://scholar.google.com/citations?user=Jom6zvgAAAAJ",
+            "https://orcid.org/0009-0006-0450-6860",
+            "https://www.linkedin.com/in/Hossein-Mohammadifar-ir27/",
+            "https://github.com/hmohammadifar"
+      ],
+      "knowsAbout": [
+            "Artificial intelligence",
+            "Cybersecurity",
+            "Digital transformation",
+            "IT governance",
+            "Fintech"
+      ]
+}
+    </script>
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
     <link rel="preload" href="assets/css/base.css" as="style" />
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/layout.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
     <link rel="stylesheet" href="assets/css/print.css" media="print" />
-    <script>
-      document.documentElement.classList.remove("no-js");
-    </script>
     <script src="assets/js/animations.js" defer></script>
     <script src="assets/js/interactions.js" defer></script>
     <script src="assets/js/main.js" defer></script>
@@ -74,7 +98,7 @@
             type="button"
             data-theme-toggle
             aria-pressed="false"
-            aria-label="Switch to dark theme"
+            aria-label="Dark theme"
             title="Dark theme"
           >
             <svg
@@ -113,7 +137,7 @@
             data-nav-toggle
             aria-expanded="false"
             aria-controls="primary-nav"
-            aria-label="Toggle navigation menu"
+            aria-label="Menu"
           >
             <span class="nav-toggle__bars" aria-hidden="true"
               ><span></span><span></span><span></span
@@ -122,7 +146,7 @@
         </div>
       </div>
     </header>
-    <main id="main">
+    <main id="main" tabindex="-1">
       <section class="hero">
         <div class="hero__bg" aria-hidden="true">
           <div class="hero__grid-lines"></div>
@@ -135,10 +159,8 @@
               Technology strategy &middot; Security &middot; AI
             </p>
             <h1 class="hero__title">
-              <span data-split-text>Dr Hossein</span
-              ><span class="hero__title-accent" data-split-text
-                >Mohammadifar</span
-              >
+              <span>Dr Hossein</span>
+              <span class="hero__title-accent">Mohammadifar</span>
             </h1>
           </div>
           <div class="hero__body">
@@ -257,7 +279,7 @@
             </p>
           </div>
 
-          <div class="footer-col">
+          <nav class="footer-col" aria-label="Footer navigation">
             <h2>Explore</h2>
             <ul>
               <li><a href="about.html">About</a></li>
@@ -265,9 +287,9 @@
               <li><a href="publications.html">Publications</a></li>
               <li><a href="cv.html">Curriculum vitae</a></li>
             </ul>
-          </div>
+          </nav>
 
-          <div class="footer-col">
+          <nav class="footer-col" aria-label="External profiles">
             <h2>Elsewhere</h2>
             <ul>
               <li>
@@ -284,7 +306,7 @@
               </li>
               <li><a href="https://github.com/hmohammadifar">GitHub</a></li>
             </ul>
-          </div>
+          </nav>
         </div>
 
         <div class="footer-bottom">

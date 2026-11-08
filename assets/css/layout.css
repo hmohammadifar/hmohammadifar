@@ -533,44 +533,34 @@
   height: 18px;
 }
 
-/* --------------------------------------------------------------------------
-   Reveal animation base (JS toggles .is-in)
-   -------------------------------------------------------------------------- */
+/* Content remains visible even if scripting or animation fails. */
 .reveal {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity var(--dur-slow) var(--ease),
-    transform var(--dur-slow) var(--ease);
-  transition-delay: var(--reveal-delay, 0ms);
-  will-change: opacity, transform;
-}
-
-.reveal.is-in {
   opacity: 1;
   transform: none;
 }
 
-.reveal--left {
-  transform: translateX(-22px);
+/* Without JavaScript, navigation stays available in the document flow. */
+.no-js .theme-toggle,
+.no-js .nav-toggle,
+.no-js [data-copy] {
+  display: none;
 }
 
-.reveal--right {
-  transform: translateX(22px);
-}
+@media (max-width: 60rem) {
+  .no-js .site-header__inner {
+    flex-wrap: wrap;
+  }
 
-.reveal--scale {
-  transform: scale(0.97);
-}
-
-.no-js .reveal {
-  opacity: 1;
-  transform: none;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .reveal {
+  .no-js .nav {
+    position: static;
+    flex-basis: 100%;
+    order: 3;
+    max-height: none;
+    overflow: visible;
     opacity: 1;
+    visibility: visible;
     transform: none;
-    transition: none;
+    box-shadow: none;
+    padding: var(--sp-2) 0;
   }
 }
