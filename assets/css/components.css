@@ -259,6 +259,17 @@
   align-items: start;
 }
 
+/* The profile hero has no portrait: use both columns for its text. */
+.hero__inner--profile {
+  grid-template-areas: "intro body";
+  align-items: center;
+}
+
+.hero__inner--profile .hero__intro,
+.hero__inner--profile .hero__body {
+  align-self: center;
+}
+
 .hero__intro {
   grid-area: intro;
   align-self: end;
@@ -283,6 +294,10 @@
       "portrait"
       "body";
     gap: var(--sp-5);
+  }
+
+  .hero__inner--profile {
+    grid-template-areas: "intro" "body";
   }
 
   .hero__inner > .portrait {
