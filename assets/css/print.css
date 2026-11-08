@@ -191,6 +191,18 @@ dd {
   font-size: 8pt;
 }
 
+/* Long CV tables need to flow across pages instead of clipping. */
+.table-wrap {
+  overflow: visible !important;
+  break-inside: auto;
+  page-break-inside: auto;
+}
+
+table.simple tr {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
 /* Tables */
 table.simple {
   min-width: 0 !important;
