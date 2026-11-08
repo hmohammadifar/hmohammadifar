@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" width="360" height="220" role="img" aria-label="Abstract network of connected nodes">
+  <defs>
+    <radialGradient id="f3glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#b4763c" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#b4763c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="180" cy="110" r="92" fill="url(#f3glow)"/>
+  <g stroke="#2f4f8f" stroke-width="1" opacity="0.35">
+    <path d="M180 110 L 92 58M180 110 L 92 162M180 110 L 268 58M180 110 L 268 162"/>
+    <path d="M180 110 L 180 34M180 110 L 180 186M180 110 L 74 110M180 110 L 286 110"/>
+    <path d="M92 58 L 180 34M268 58 L 180 34M92 162 L 180 186M268 162 L 180 186"/>
+  </g>
+  <g>
+    <circle cx="180" cy="110" r="20" fill="#2f4f8f"/>
+    <circle cx="180" cy="110" r="27" fill="none" stroke="#2f4f8f" stroke-width="1" stroke-dasharray="3 4" opacity="0.5"/>
+    <circle cx="92" cy="58" r="9" fill="#ffffff" stroke="#2f4f8f" stroke-width="2"/>
+    <circle cx="92" cy="162" r="9" fill="#ffffff" stroke="#2f4f8f" stroke-width="2"/>
+    <circle cx="268" cy="58" r="9" fill="#ffffff" stroke="#2f4f8f" stroke-width="2"/>
+    <circle cx="268" cy="162" r="9" fill="#ffffff" stroke="#2f4f8f" stroke-width="2"/>
+    <circle cx="180" cy="34" r="7" fill="#ffffff" stroke="#b4763c" stroke-width="2"/>
+    <circle cx="180" cy="186" r="7" fill="#ffffff" stroke="#b4763c" stroke-width="2"/>
+    <circle cx="74" cy="110" r="7" fill="#ffffff" stroke="#b4763c" stroke-width="2"/>
+    <circle cx="286" cy="110" r="7" fill="#ffffff" stroke="#b4763c" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,233 @@
+/* ==========================================================================
+   print.css — clean output for the CV and other pages
+   Loaded with media="print" so it never affects screen rendering.
+   ========================================================================== */
+
+@page {
+  margin: 18mm 16mm;
+  size: A4;
+}
+
+* {
+  box-shadow: none !important;
+  text-shadow: none !important;
+  animation: none !important;
+  transition: none !important;
+}
+
+html,
+body {
+  background: #fff !important;
+  color: #111 !important;
+  font-size: 10.5pt;
+  line-height: 1.45;
+}
+
+/* Strip decoration that wastes ink */
+.site-header,
+.site-footer,
+.to-top,
+.progress-bar,
+.cursor-glow,
+.marquee,
+.cta-band,
+.hero__bg,
+.hero__orb,
+.hero__grid-lines,
+.portrait__ring,
+.nav-toggle,
+.theme-toggle,
+.skip-link,
+.breadcrumb,
+.filter-bar,
+.btn-row,
+.btn,
+.form,
+.page-hero::after {
+  display: none !important;
+}
+
+main {
+  display: block !important;
+}
+
+.section,
+.page-hero {
+  padding: 0 !important;
+  border: 0 !important;
+  background: none !important;
+}
+
+.container {
+  max-width: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Reveal animations must never hide content on paper */
+.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Typography scale-down */
+h1 {
+  font-size: 22pt;
+  margin-bottom: 4pt;
+}
+h2 {
+  font-size: 14pt;
+  margin-bottom: 6pt;
+  page-break-after: avoid;
+}
+h3 {
+  font-size: 11.5pt;
+  page-break-after: avoid;
+}
+p,
+li,
+dd {
+  font-size: 10pt;
+  orphans: 3;
+  widows: 3;
+}
+
+.lead {
+  font-size: 11pt;
+  color: #333 !important;
+}
+
+.eyebrow {
+  color: #6b4a24 !important;
+  font-size: 8pt;
+  margin-bottom: 2pt;
+}
+
+.eyebrow::before {
+  display: none;
+}
+
+/* Structure */
+.split,
+.split--wide-left,
+.grid,
+.grid--2,
+.grid--3,
+.hero__inner,
+.project {
+  display: block !important;
+}
+
+.sticky-aside {
+  position: static !important;
+  margin-top: 12pt;
+}
+
+.card,
+.pub,
+.timeline__item,
+.accordion,
+.table-wrap,
+.callout,
+.placeholder-note,
+.stats,
+.stat {
+  border: 1px solid #bbb !important;
+  background: #fff !important;
+  border-radius: 0 !important;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.card,
+.pub,
+.callout,
+.placeholder-note {
+  padding: 8pt 10pt !important;
+  margin-bottom: 8pt;
+}
+
+/* Timeline becomes a plain list */
+.timeline {
+  padding-left: 0 !important;
+  gap: 8pt !important;
+}
+
+.timeline::before,
+.timeline__item::before {
+  display: none !important;
+}
+
+.timeline__period {
+  background: none !important;
+  padding: 0 !important;
+  color: #6b4a24 !important;
+  font-size: 8.5pt;
+}
+
+.timeline__desc,
+.timeline__org {
+  color: #333 !important;
+}
+
+/* Publications */
+.pub__num {
+  display: none;
+}
+
+.pub {
+  display: block !important;
+}
+
+.pub__links,
+.card__footer {
+  display: none !important;
+}
+
+.tag {
+  border: 1px solid #ccc !important;
+  background: #fff !important;
+  color: #444 !important;
+  font-size: 8pt;
+}
+
+/* Tables */
+table.simple {
+  min-width: 0 !important;
+  font-size: 9.5pt;
+}
+
+table.simple th,
+table.simple td {
+  padding: 3pt 6pt;
+  border-bottom: 1px solid #ddd;
+}
+
+table.simple thead th {
+  background: #f2f2f2 !important;
+  color: #222 !important;
+}
+
+/* Links print as plain text with the URL after them */
+a {
+  color: #111 !important;
+  text-decoration: none !important;
+}
+
+a[href^="http"]::after,
+a[href^="mailto"]::after {
+  content: " (" attr(href) ")";
+  font-size: 8pt;
+  color: #555;
+  word-break: break-all;
+}
+
+/* Avoid awkward breaks */
+section {
+  break-inside: auto;
+}
+
+.accent-rule {
+  border-top: 1px solid #999;
+  margin: 10pt 0;
+}

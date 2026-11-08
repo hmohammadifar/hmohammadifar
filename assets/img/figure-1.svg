@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" width="360" height="220" role="img" aria-label="Abstract diagram of stacked model layers">
+  <defs>
+    <linearGradient id="f1a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f4f8f" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#2f4f8f" stop-opacity="0.03"/>
+    </linearGradient>
+    <linearGradient id="f1b" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f4f8f"/>
+      <stop offset="1" stop-color="#b4763c"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="220" fill="#ffffff" fill-opacity="0"/>
+  <g stroke="#c4bdae" stroke-width="1" fill="url(#f1a)">
+    <rect x="58" y="34" width="244" height="42" rx="8"/>
+    <rect x="46" y="88" width="268" height="42" rx="8"/>
+    <rect x="34" y="142" width="292" height="42" rx="8"/>
+  </g>
+  <g stroke="#2f4f8f" stroke-width="1.4" opacity="0.55" fill="none">
+    <path d="M110 55h140" stroke-dasharray="5 5"/>
+    <path d="M98 109h164" stroke-dasharray="5 5"/>
+  </g>
+  <g fill="#b4763c">
+    <circle cx="86" cy="55" r="4"/>
+    <circle cx="274" cy="55" r="4"/>
+    <circle cx="74" cy="109" r="4"/>
+    <circle cx="286" cy="109" r="4"/>
+    <circle cx="62" cy="163" r="4"/>
+    <circle cx="298" cy="163" r="4"/>
+  </g>
+  <g stroke="url(#f1b)" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M180 76v12M180 130v12"/>
+  </g>
+  <g fill="#2f4f8f" opacity="0.75">
+    <rect x="150" y="46" width="60" height="6" rx="3" opacity="0.35"/>
+    <rect x="138" y="100" width="84" height="6" rx="3" opacity="0.5"/>
+    <rect x="126" y="154" width="108" height="6" rx="3" opacity="0.7"/>
+  </g>
+</svg>

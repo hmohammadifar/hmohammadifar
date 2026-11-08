@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" width="360" height="220" role="img" aria-label="Abstract time series with uncertainty bands">
+  <defs>
+    <linearGradient id="f2band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b4763c" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#b4763c" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="f2line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f4f8f"/>
+      <stop offset="1" stop-color="#4a6cb0"/>
+    </linearGradient>
+  </defs>
+  <g stroke="#c4bdae" stroke-width="1" opacity="0.7">
+    <path d="M40 40h286M40 85h286M40 130h286M40 175h286" stroke-dasharray="2 6"/>
+  </g>
+  <path d="M40 148 C 70 120, 92 96, 118 108 S 158 150, 182 128 S 224 72, 250 90 S 300 132, 326 104 L 326 148 C 300 172, 250 138, 224 118 S 182 168, 158 186 S 92 148, 70 156 Z"
+        fill="url(#f2band)"/>
+  <path d="M40 138 C 70 112, 92 92, 118 104 S 158 142, 182 120 S 224 68, 250 86 S 300 122, 326 96"
+        fill="none" stroke="url(#f2line)" stroke-width="2.4" stroke-linecap="round"/>
+  <g fill="#2f4f8f">
+    <circle cx="118" cy="104" r="3.6"/>
+    <circle cx="250" cy="86" r="3.6"/>
+    <circle cx="326" cy="96" r="3.6"/>
+  </g>
+  <g fill="#b4763c" opacity="0.9">
+    <circle cx="182" cy="120" r="3.2"/>
+  </g>
+  <g stroke="#8d97a5" stroke-width="1">
+    <path d="M40 190v6M326 190v6M40 193h286"/>
+  </g>
+</svg>

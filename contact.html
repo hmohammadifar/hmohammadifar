@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="no-js" data-page="contact">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Dr Hossein Mohammadifar</title>
+  <meta name="description" content="Placeholder contact page with a validated enquiry form.">
+  <meta name="author" content="Dr Hossein Mohammadifar">
+  <meta name="theme-color" content="#f7f5f1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact — Dr Hossein Mohammadifar">
+  <meta property="og:description" content="Placeholder contact page with a validated enquiry form.">
+  <meta property="og:site_name" content="Dr Hossein Mohammadifar">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/css/base.css" as="style">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/print.css" media="print">
+  <script>document.documentElement.classList.remove("no-js");</script>
+  <script src="assets/js/animations.js" defer></script>
+  <script src="assets/js/interactions.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="progress-bar" data-progress aria-hidden="true"></div>
+  <div class="cursor-glow" data-cursor-glow aria-hidden="true"></div>
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">HM</span>
+        <span class="brand__text">
+          <span class="brand__name">Dr&nbsp;Hossein Mohammadifar</span>
+          <span class="brand__role">Research portfolio</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="primary-nav" data-nav aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="research.html">Research</a></li>
+          <li><a class="nav__link" href="publications.html">Publications</a></li>
+          <li><a class="nav__link" href="cv.html">CV</a></li>
+          <li><a class="nav__link" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <div class="nav__cta">
+          <a class="btn btn--sm" href="contact.html">Get in touch</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme" title="Dark theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8" stroke-linecap="round"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+          <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero__inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Contact</span>
+        </nav>
+        <p class="eyebrow">Get in touch</p>
+          <h1>Contact</h1>
+          <p class="lead">For collaboration, speaking invitations, supervision enquiries or teaching matters. This form is a placeholder — it does not send yet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div class="reveal">
+            <h2 style="margin-bottom: var(--sp-5);">Send a message</h2>
+
+            <form class="form" data-contact-form novalidate>
+              <div class="form__row">
+                <div class="field">
+                  <label for="name">Full name <span class="req" aria-hidden="true">*</span></label>
+                  <input type="text" id="name" name="name" autocomplete="name" placeholder="Jane Researcher" required>
+                  <span class="field__error" aria-live="polite"></span>
+                </div>
+                <div class="field">
+                  <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+                  <input type="email" id="email" name="email" autocomplete="email" placeholder="jane@example.com" required>
+                  <span class="field__error" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="field">
+                  <label for="affiliation">Organisation</label>
+                  <input type="text" id="affiliation" name="affiliation" autocomplete="organization" placeholder="University or company">
+                  <span class="field__hint">Optional — helps me reply in context.</span>
+                </div>
+                <div class="field">
+                  <label for="topic">Reason for contact</label>
+                  <select id="topic" name="topic">
+                    <option value="collaboration">Research collaboration</option>
+                    <option value="talk">Invited talk or lecture</option>
+                    <option value="supervision">Supervision enquiry</option>
+                    <option value="teaching">Teaching or reviewing</option>
+                    <option value="other">Something else</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" rows="6" placeholder="A few sentences about what you have in mind…" required></textarea>
+                <span class="field__error" aria-live="polite"></span>
+              </div>
+
+              <div class="field">
+                <label for="consent" style="display:flex;gap:.6rem;align-items:flex-start;font-weight:500;">
+                  <input type="checkbox" id="consent" name="consent" style="width:auto;margin-top:.35rem;" required>
+                  <span>I understand this is a placeholder form and no message will be
+                  delivered until a backend or form service is connected.</span>
+                </label>
+                <span class="field__error" aria-live="polite"></span>
+              </div>
+
+              <div class="btn-row">
+                <button class="btn" type="submit">Send message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <button class="btn btn--ghost" type="reset">Clear form</button>
+              </div>
+
+              <p class="form__note">
+                No data is transmitted or stored. To make the form live, point it at a
+                form service (Formspree, Netlify Forms) or your own endpoint.
+              </p>
+
+              <div class="form__status" data-form-status>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" stroke-width="1.6"/><path d="m8.2 12.2 2.6 2.6 5-5.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div>
+                  <strong>Placeholder submission received.</strong>
+                  <p>Nothing was sent — this confirms the validation and success state
+                  work. Connect a real endpoint to deliver messages.</p>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <aside class="sticky-aside reveal reveal--right">
+            <div class="card">
+              <h3>Direct contact</h3>
+              <dl class="info-list" style="margin-top: var(--sp-3);">
+                <div class="info-item">
+                  <span class="info-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <div>
+                    <dt>Email</dt>
+                    <dd><a href="mailto:h.mohammadifar@example.com">h.mohammadifar@example.com</a></dd>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <span class="info-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+                  <div>
+                    <dt>Location</dt>
+                    <dd>London, United Kingdom</dd>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <span class="info-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <div>
+                    <dt>Response time</dt>
+                    <dd>Usually within one week (placeholder)</dd>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <span class="info-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false"><path d="M10.5 13.5a4 4 0 0 0 5.7 0l2.6-2.6a4 4 0 0 0-5.7-5.7L11.6 6.7" stroke-linecap="round"/><path d="M13.5 10.5a4 4 0 0 0-5.7 0L5.2 13.1a4 4 0 0 0 5.7 5.7l1.5-1.5" stroke-linecap="round"/></svg></span>
+                  <div>
+                    <dt>Profiles</dt>
+                    <dd style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.35rem">
+                      <a href="#" data-placeholder-link="Placeholder — add Google Scholar URL">Scholar</a>
+                      <a href="#" data-placeholder-link="Placeholder — add ORCID URL">ORCID</a>
+                      <a href="#" data-placeholder-link="Placeholder — add LinkedIn URL">LinkedIn</a>
+                      <a href="#" data-placeholder-link="Placeholder — add GitHub URL">GitHub</a>
+                    </dd>
+                  </div>
+                </div>
+              </dl>
+
+              <div class="card__footer">
+                <button class="btn btn--ghost btn--sm btn--block" type="button" data-copy="h.mohammadifar@example.com">Copy email address</button>
+              </div>
+            </div>
+
+            <div class="placeholder-note" style="margin-top: var(--sp-4);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.8v.2" stroke-linecap="round"/></svg>
+              <p>All contact details are <strong>placeholders</strong>. Use a real,
+              monitored address before publishing the site.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="stats reveal">
+          <div class="stat">
+            <span class="stat__value">1–2</span>
+            <span class="stat__label">Weeks for a full reply</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">Mon</span>
+            <span class="stat__label">Best day for calls</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">UTC</span>
+            <span class="stat__label">Working time zone</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">Open</span>
+            <span class="stat__label">To collaboration</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <span class="brand__mark" aria-hidden="true">HM</span>
+            <span class="brand__text">
+              <span class="brand__name">Dr&nbsp;Hossein Mohammadifar</span>
+              <span class="brand__role">Research portfolio</span>
+            </span>
+          </a>
+          <p>Placeholder portfolio for a researcher and lecturer. Built as a static,
+          dependency-free HTML5 and CSS site with a little vanilla JavaScript.</p>
+        </div>
+
+        <div class="footer-col">
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="cv.html">Curriculum vitae</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2>Elsewhere</h2>
+          <ul>
+            <li><a href="#" data-placeholder-link="Placeholder — add Google Scholar URL">Google Scholar</a></li>
+            <li><a href="#" data-placeholder-link="Placeholder — add ORCID URL">ORCID</a></li>
+            <li><a href="#" data-placeholder-link="Placeholder — add LinkedIn URL">LinkedIn</a></li>
+            <li><a href="#" data-placeholder-link="Placeholder — add GitHub URL">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Dr Hossein Mohammadifar. All rights reserved.</p>
+        <p class="footer-bottom__note">
+          <span class="footer-bottom__dot" aria-hidden="true"></span>
+          Placeholder content — ready for real details
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" data-to-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true" focusable="false"><path d="M12 19V5M6 11l6-6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+</body>
+</html>
